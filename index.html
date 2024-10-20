@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dycoders | TikDown</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Dycoders<span>&nbsp; TikDown</span></h1>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h2>TikTok Downloader</h2>
+            <p>Enter a TikTok URL to download photos, videos, or music</p>
+            
+            <div class="input-group">
+                <input type="text" id="url-input" placeholder="Enter TikTok URL">
+                <button onclick="downloadVideo()">Download</button>
+            </div>
+            <div id="result-container"></div>
+        </div>
+        <div class="card" id="download-links" style="display:none;">
+            <h3>Download Links</h3>
+            <a id="download-video" class="download-btn" href="#" style="display:none;">Download Video</a>
+            <a id="download-music" class="download-btn" href="#" style="display:none;">Download Music</a>
+        </div>
+        <div class="card">
+            <div class="feature">
+                <i class="fas fa-download"></i>
+                <h3>Easy Download</h3>
+            </div>
+            <p>Download TikTok videos, photos, and music without watermarks quickly and easily.</p>
+        </div>
+        <div class="card">
+            <div class="feature">
+                <i class="fas fa-ban"></i>
+                <h3>No Ads</h3>
+            </div>
+            <p>Website without ads that disturb your comfort.</p>
+        </div>
+        <div class="card">
+            <div class="feature">
+                <i class="fas fa-info-circle"></i>
+                <h3>How It Works</h3>
+            </div>
+            <p>Simply paste the TikTok URL, click download, and save your favorite content, including music!</p>
+        </div>
+    </div>
+
+    
+    <div id="loading-modal" class="modal">
+        <div class="modal-content">
+            Loading...
+        </div>
+    </div>
+
+    
+    <div id="toast" class="toast">Failed to retrieve video. Please try again.</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
